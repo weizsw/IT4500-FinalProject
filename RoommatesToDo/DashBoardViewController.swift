@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IceCream
 
 class ViewController: UIViewController {
 
