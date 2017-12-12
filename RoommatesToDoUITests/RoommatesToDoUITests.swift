@@ -1,10 +1,4 @@
-//
-//  RoommatesToDoUITests.swift
-//  RoommatesToDoUITests
-//
-//  Created by Anson on 2017/12/6.
-//  Copyright © 2017年 Anson. All rights reserved.
-//
+
 
 import XCTest
 

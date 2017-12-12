@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		152E72F71FD7EBAB00124A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E72F61FD7EBAB00124A7E /* AppDelegate.swift */; };
-		152E72F91FD7EBAB00124A7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E72F81FD7EBAB00124A7E /* ViewController.swift */; };
+		152E72F91FD7EBAB00124A7E /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E72F81FD7EBAB00124A7E /* DashBoardViewController.swift */; };
 		152E72FC1FD7EBAB00124A7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152E72FA1FD7EBAB00124A7E /* Main.storyboard */; };
 		152E72FE1FD7EBAB00124A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152E72FD1FD7EBAB00124A7E /* Assets.xcassets */; };
 		152E73011FD7EBAB00124A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152E72FF1FD7EBAB00124A7E /* LaunchScreen.storyboard */; };
 		152E730C1FD7EBAB00124A7E /* RoommatesToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E730B1FD7EBAB00124A7E /* RoommatesToDoTests.swift */; };
 		152E73171FD7EBAB00124A7E /* RoommatesToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73161FD7EBAB00124A7E /* RoommatesToDoUITests.swift */; };
+		152E73261FD7F45100124A7E /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152E73251FD7F45100124A7E /* CloudKit.framework */; };
+		152E73281FD9003600124A7E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73271FD9003600124A7E /* Model.swift */; };
+		152E732A1FD909FC00124A7E /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73291FD909FC00124A7E /* CloudKitManager.swift */; };
+		152E732C1FD93FF100124A7E /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E732B1FD93FF100124A7E /* Array+Extension.swift */; };
+		152E732E1FD941D600124A7E /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E732D1FD941D600124A7E /* Date+Extension.swift */; };
+		152E73301FD959C400124A7E /* ChoreEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E732F1FD959C400124A7E /* ChoreEditViewController.swift */; };
+		152E73321FDA631200124A7E /* ChoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73311FDA631200124A7E /* ChoreViewController.swift */; };
+		152E73341FDBCD2A00124A7E /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73331FDBCD2A00124A7E /* ExpenseViewController.swift */; };
+		152E73361FDBCEF300124A7E /* ExpenseEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73351FDBCEF300124A7E /* ExpenseEditViewController.swift */; };
+		152E73381FDBD3DD00124A7E /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73371FDBD3DD00124A7E /* ExpenseTableViewCell.swift */; };
+		152E733A1FDCDDF600124A7E /* ChoreDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E73391FDCDDF600124A7E /* ChoreDetailViewController.swift */; };
+		152E733C1FDCDE7600124A7E /* ExpenseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152E733B1FDCDE7600124A7E /* ExpenseDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +48,7 @@
 /* Begin PBXFileReference section */
 		152E72F31FD7EBAB00124A7E /* RoommatesToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoommatesToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		152E72F61FD7EBAB00124A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		152E72F81FD7EBAB00124A7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		152E72F81FD7EBAB00124A7E /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
 		152E72FB1FD7EBAB00124A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		152E72FD1FD7EBAB00124A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		152E73001FD7EBAB00124A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,19 @@
 		152E73121FD7EBAB00124A7E /* RoommatesToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoommatesToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		152E73161FD7EBAB00124A7E /* RoommatesToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoommatesToDoUITests.swift; sourceTree = "<group>"; };
 		152E73181FD7EBAB00124A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		152E73241FD7F44E00124A7E /* RoommatesToDo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RoommatesToDo.entitlements; sourceTree = "<group>"; };
+		152E73251FD7F45100124A7E /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		152E73271FD9003600124A7E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		152E73291FD909FC00124A7E /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		152E732B1FD93FF100124A7E /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		152E732D1FD941D600124A7E /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		152E732F1FD959C400124A7E /* ChoreEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreEditViewController.swift; sourceTree = "<group>"; };
+		152E73311FDA631200124A7E /* ChoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreViewController.swift; sourceTree = "<group>"; };
+		152E73331FDBCD2A00124A7E /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
+		152E73351FDBCEF300124A7E /* ExpenseEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseEditViewController.swift; sourceTree = "<group>"; };
+		152E73371FDBD3DD00124A7E /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		152E73391FDCDDF600124A7E /* ChoreDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreDetailViewController.swift; sourceTree = "<group>"; };
+		152E733B1FDCDE7600124A7E /* ExpenseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152E73261FD7F45100124A7E /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +107,7 @@
 				152E730A1FD7EBAB00124A7E /* RoommatesToDoTests */,
 				152E73151FD7EBAB00124A7E /* RoommatesToDoUITests */,
 				152E72F41FD7EBAB00124A7E /* Products */,
+				44D9D9B2DE6C143E71ADEFB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +124,20 @@
 		152E72F51FD7EBAB00124A7E /* RoommatesToDo */ = {
 			isa = PBXGroup;
 			children = (
+				152E73241FD7F44E00124A7E /* RoommatesToDo.entitlements */,
 				152E72F61FD7EBAB00124A7E /* AppDelegate.swift */,
-				152E72F81FD7EBAB00124A7E /* ViewController.swift */,
+				152E732B1FD93FF100124A7E /* Array+Extension.swift */,
+				152E732D1FD941D600124A7E /* Date+Extension.swift */,
+				152E72F81FD7EBAB00124A7E /* DashBoardViewController.swift */,
+				152E73271FD9003600124A7E /* Model.swift */,
+				152E73291FD909FC00124A7E /* CloudKitManager.swift */,
+				152E73311FDA631200124A7E /* ChoreViewController.swift */,
+				152E732F1FD959C400124A7E /* ChoreEditViewController.swift */,
+				152E73331FDBCD2A00124A7E /* ExpenseViewController.swift */,
+				152E73351FDBCEF300124A7E /* ExpenseEditViewController.swift */,
+				152E73371FDBD3DD00124A7E /* ExpenseTableViewCell.swift */,
+				152E73391FDCDDF600124A7E /* ChoreDetailViewController.swift */,
+				152E733B1FDCDE7600124A7E /* ExpenseDetailViewController.swift */,
 				152E72FA1FD7EBAB00124A7E /* Main.storyboard */,
 				152E72FD1FD7EBAB00124A7E /* Assets.xcassets */,
 				152E72FF1FD7EBAB00124A7E /* LaunchScreen.storyboard */,
@@ -123,6 +162,14 @@
 				152E73181FD7EBAB00124A7E /* Info.plist */,
 			);
 			path = RoommatesToDoUITests;
+			sourceTree = "<group>";
+		};
+		44D9D9B2DE6C143E71ADEFB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				152E73251FD7F45100124A7E /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +241,17 @@
 					152E72F21FD7EBAB00124A7E = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					152E73061FD7EBAB00124A7E = {
 						CreatedOnToolsVersion = 9.1;
@@ -259,8 +317,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152E72F91FD7EBAB00124A7E /* ViewController.swift in Sources */,
+				152E73281FD9003600124A7E /* Model.swift in Sources */,
+				152E732C1FD93FF100124A7E /* Array+Extension.swift in Sources */,
+				152E73341FDBCD2A00124A7E /* ExpenseViewController.swift in Sources */,
+				152E73361FDBCEF300124A7E /* ExpenseEditViewController.swift in Sources */,
+				152E72F91FD7EBAB00124A7E /* DashBoardViewController.swift in Sources */,
+				152E732A1FD909FC00124A7E /* CloudKitManager.swift in Sources */,
+				152E73321FDA631200124A7E /* ChoreViewController.swift in Sources */,
 				152E72F71FD7EBAB00124A7E /* AppDelegate.swift in Sources */,
+				152E73381FDBD3DD00124A7E /* ExpenseTableViewCell.swift in Sources */,
+				152E733A1FDCDDF600124A7E /* ChoreDetailViewController.swift in Sources */,
+				152E732E1FD941D600124A7E /* Date+Extension.swift in Sources */,
+				152E73301FD959C400124A7E /* ChoreEditViewController.swift in Sources */,
+				152E733C1FDCDE7600124A7E /* ExpenseDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +495,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RoommatesToDo/RoommatesToDo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9A8N83872W;
+				DEVELOPMENT_TEAM = 4FNJNUQ3AD;
 				INFOPLIST_FILE = RoommatesToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Anson.io.RoommatesToDo;
+				PRODUCT_BUNDLE_IDENTIFIER = szz63;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +514,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RoommatesToDo/RoommatesToDo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9A8N83872W;
+				DEVELOPMENT_TEAM = 4FNJNUQ3AD;
 				INFOPLIST_FILE = RoommatesToDo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Anson.io.RoommatesToDo;
+				PRODUCT_BUNDLE_IDENTIFIER = szz63;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
