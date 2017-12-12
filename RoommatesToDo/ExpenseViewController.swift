@@ -1,4 +1,10 @@
-
+//
+//  ExpenseViewController.swift
+//  RoommatesToDo
+//
+//  Created by Anson on 2017/12/9.
+//  Copyright © 2017年 Anson. All rights reserved.
+//
 
 import UIKit
 
@@ -11,7 +17,6 @@ class ExpenseViewController: UIViewController {
     var finished:Bool = false
     
     override func viewWillAppear(_ animated: Bool) {
-        self.tableView.reloadData()
         super.viewWillAppear(animated)
         self.fetchData(isFinished: finished)
     }
@@ -96,3 +101,4 @@ extension ExpenseViewController : UITableViewDelegate,UITableViewDataSource {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
+

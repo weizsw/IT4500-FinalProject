@@ -3,7 +3,7 @@
 import UIKit
 
 class ChoreEditViewController: UITableViewController {
-
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var repeatPickerView: UIPickerView!
     
@@ -30,13 +30,12 @@ class ChoreEditViewController: UITableViewController {
             self.repeatPickerView.selectRow(repeatTitles.index(of: `repeat`)!, inComponent: 0, animated: false)
         }
         self.highPrioritySwitch.setOn(task?.highPriority ?? false, animated: false)
-       
+        
     }
     
-
     @objc func clickDone(item:UIBarButtonItem) {
         self.navigationItem.rightBarButtonItem?.isEnabled = false
-
+        
         var recordData = [String:Any]()
         recordData["title"] = self.titleTextField.text
         recordData["dueDay"] = self.datePickerView.date
@@ -65,7 +64,7 @@ class ChoreEditViewController: UITableViewController {
         }
         
     }
-
+    
 }
 
 extension ChoreEditViewController {
@@ -102,8 +101,9 @@ extension ChoreEditViewController : UIPickerViewDelegate,UIPickerViewDataSource 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return 3
     }
-
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return repeatTitles[row].description
     }
 }
+

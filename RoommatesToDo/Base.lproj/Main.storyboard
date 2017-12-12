@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chore-->
+        <!--Chores-->
         <scene sceneID="8Ue-hG-FcO">
             <objects>
                 <viewController id="2fi-eU-lTx" customClass="ChoreViewController" customModule="RoommatesToDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,17 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3xa-3p-KOS">
-                                <rect key="frame" x="107" y="74" width="161" height="29"/>
+                                <rect key="frame" x="107" y="126" width="161" height="29"/>
                                 <segments>
                                     <segment title="Unfinished"/>
                                     <segment title="Finished"/>
                                 </segments>
+                                <color key="tintColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="clickSegmentedControl:" destination="2fi-eU-lTx" eventType="valueChanged" id="zHx-6A-SXK"/>
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Ik-Xf-SH6">
-                                <rect key="frame" x="0.0" y="112" width="375" height="506"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashBoardTableViewCell" rowHeight="108" id="Qdb-wV-l66" customClass="DashBoardTableViewCell" customModule="RoommatesToDo" customModuleProvider="target">
@@ -42,7 +43,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FJm-hw-Mzd">
                                                     <rect key="frame" x="15" y="5" width="345" height="97.5"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulb" translatesAutoresizingMaskIntoConstraints="NO" id="Xos-Qx-C9b">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageView:Xos-Qx-C9b:image" translatesAutoresizingMaskIntoConstraints="NO" id="Xos-Qx-C9b">
                                                             <rect key="frame" x="8" y="11" width="75" height="75"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="75" id="N4L-yf-N37"/>
@@ -105,9 +106,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ckz-zK-Rz4"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chore" id="Cho-9q-0Dm">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="OUb-Wl-IZl">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <navigationItem key="navigationItem" title="Chores" id="Cho-9q-0Dm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OUb-Wl-IZl">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="6ON-2b-psz" kind="show" identifier="showChoreDetail" id="Mcj-TY-kio"/>
                             </connections>
@@ -299,25 +300,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKC-V5-U0a">
-                                <rect key="frame" x="30" y="93" width="315" height="29"/>
+                                <rect key="frame" x="30" y="145" width="315" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cbi-Ei-9Pd">
-                                <rect key="frame" x="46" y="143.5" width="51" height="27"/>
+                                <rect key="frame" x="46" y="195.5" width="51" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repeat:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-kY-BZD">
-                                <rect key="frame" x="46" y="187.5" width="74" height="27"/>
+                                <rect key="frame" x="46" y="239.5" width="74" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Priority:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ong-2X-cFu">
-                                <rect key="frame" x="46" y="229.5" width="123" height="27"/>
+                                <rect key="frame" x="46" y="281.5" width="123" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -358,7 +359,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="aLZ-Cu-ORd" kind="relationship" relationship="viewControllers" id="edg-hi-Y6x"/>
@@ -377,9 +378,13 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aLZ-Cu-ORd" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Dashboard" image="dashboard" selectedImage="dashboard-fill" id="c8L-er-NXa"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Olf-J1-zuw">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Olf-J1-zuw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -407,23 +412,23 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdy-JX-kBe">
-                                            <rect key="frame" x="15" y="5" width="345" height="97.5"/>
+                                            <rect key="frame" x="15" y="5" width="345" height="98"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bulb" translatesAutoresizingMaskIntoConstraints="NO" id="GGZ-0b-M3a">
-                                                    <rect key="frame" x="8" y="11" width="75" height="75"/>
+                                                    <rect key="frame" x="8" y="11.5" width="75" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="75" id="alw-2V-5KJ"/>
                                                         <constraint firstAttribute="height" constant="75" id="det-iJ-AqU"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJe-0u-DMS">
-                                                    <rect key="frame" x="337" y="89" width="0.0" height="0.0"/>
+                                                    <rect key="frame" x="337" y="89.5" width="0.0" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxW-Lp-Ec3">
-                                                    <rect key="frame" x="91" y="32" width="64" height="33"/>
+                                                    <rect key="frame" x="91" y="32.5" width="64" height="33"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -462,6 +467,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Dashboard" id="62Y-hA-Jan"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="s87-wd-myC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <action selector="refresh:" destination="Wd9-OI-idd" eventType="valueChanged" id="yUM-vw-YlM"/>
@@ -472,16 +478,23 @@
             </objects>
             <point key="canvasLocation" x="462" y="-134"/>
         </scene>
-        <!--chore-->
+        <!--Chores-->
         <scene sceneID="uH9-4k-CXb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wJA-MC-KvK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="chore" image="chore" selectedImage="chore-fill" id="nsy-8O-fDe"/>
+                    <tabBarItem key="tabBarItem" title="Chores" image="chore" selectedImage="chore-fill" id="nsy-8O-fDe"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4EV-P1-7NQ">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="4EV-P1-7NQ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -492,7 +505,7 @@
             </objects>
             <point key="canvasLocation" x="42.399999999999999" y="538.38080959520244"/>
         </scene>
-        <!--Expense-->
+        <!--Expenses-->
         <scene sceneID="VMk-nf-b3t">
             <objects>
                 <viewController id="6Yq-WG-Kgh" customClass="ExpenseViewController" customModule="RoommatesToDo" customModuleProvider="target" sceneMemberID="viewController">
@@ -501,17 +514,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kMr-Qm-KZH">
-                                <rect key="frame" x="129" y="74" width="117" height="29"/>
+                                <rect key="frame" x="129" y="126" width="117" height="29"/>
                                 <segments>
                                     <segment title="Unpaid"/>
-                                    <segment title="paid"/>
+                                    <segment title="Paid"/>
                                 </segments>
                                 <connections>
                                     <action selector="clickSegmentedControl:" destination="6Yq-WG-Kgh" eventType="valueChanged" id="Tx3-zk-Uwa"/>
                                 </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aFR-ca-Nj3">
-                                <rect key="frame" x="0.0" y="112" width="375" height="506"/>
+                                <rect key="frame" x="0.0" y="164" width="375" height="454"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DashBoardTableViewCell" rowHeight="108" id="373-Ij-0mB" customClass="ExpenseTableViewCell" customModule="RoommatesToDo" customModuleProvider="target">
@@ -595,6 +608,7 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aFR-ca-Nj3" firstAttribute="trailing" secondItem="gvC-g3-xsz" secondAttribute="trailing" id="PsT-q0-TRz"/>
                             <constraint firstItem="aFR-ca-Nj3" firstAttribute="bottom" secondItem="gvC-g3-xsz" secondAttribute="bottom" id="Qiy-uz-LM0"/>
@@ -605,9 +619,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gvC-g3-xsz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Expense" id="Ti2-vi-iuN">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="GcW-j9-SIl">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <navigationItem key="navigationItem" title="Expenses" id="Ti2-vi-iuN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="GcW-j9-SIl">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="y1B-0s-DiX" kind="show" id="TDr-LF-wyY"/>
                             </connections>
@@ -647,8 +661,8 @@
                                                         <constraint firstAttribute="height" constant="50" id="GFf-Zi-3Np"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHs-xB-toc">
-                                                    <rect key="frame" x="90" y="24" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daniel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHs-xB-toc">
+                                                    <rect key="frame" x="90" y="24" width="47.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -676,8 +690,8 @@
                                                         <constraint firstAttribute="height" constant="50" id="rbP-m1-uE7"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="co8-9p-8fR">
-                                                    <rect key="frame" x="90" y="24" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="co8-9p-8fR">
+                                                    <rect key="frame" x="90" y="24" width="26.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -705,8 +719,8 @@
                                                         <constraint firstAttribute="height" constant="50" id="tyb-na-iCP"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHi-Me-ANe">
-                                                    <rect key="frame" x="90" y="24" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHi-Me-ANe">
+                                                    <rect key="frame" x="90" y="24" width="36" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -734,8 +748,8 @@
                                                         <constraint firstAttribute="height" constant="50" id="ysh-w0-cqS"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8y-VM-12I">
-                                                    <rect key="frame" x="90" y="24" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hubert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8y-VM-12I">
+                                                    <rect key="frame" x="90" y="24" width="54" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -763,16 +777,23 @@
             </objects>
             <point key="canvasLocation" x="-1271" y="1797"/>
         </scene>
-        <!--Expense-->
+        <!--Expenses-->
         <scene sceneID="CVP-0g-SJa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dE0-aX-xMd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Expense" image="expense" selectedImage="expense-fill" id="Czg-1O-PLN"/>
+                    <tabBarItem key="tabBarItem" title="Expenses" image="expense" selectedImage="expense-fill" id="Czg-1O-PLN"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y9F-zb-K2N">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="y9F-zb-K2N">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1081,9 +1102,16 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Hya-Nl-Mm9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Roommates" image="roommates" selectedImage="roommates-fill" id="eYN-cD-ZlU"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Djc-9I-71r">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Djc-9I-71r">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.054901960780000002" green="0.40784313729999999" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1099,10 +1127,188 @@
         <image name="bulb" width="33" height="33"/>
         <image name="chore" width="33" height="33"/>
         <image name="chore-fill" width="33" height="33"/>
-        <image name="dashboard" width="33" height="33"/>
-        <image name="dashboard-fill" width="33" height="33"/>
-        <image name="expense" width="33" height="33"/>
-        <image name="expense-fill" width="33" height="33"/>
+        <image name="dashboard" width="30" height="30"/>
+        <image name="dashboard-fill" width="30" height="30"/>
+        <image name="expense" width="30" height="30"/>
+        <image name="expense-fill" width="30" height="30"/>
+        <image name="imageView:Xos-Qx-C9b:image" width="33" height="33">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGVVZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEgcI
+ExQZHh8jJCsuMTtDR0tPUlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdz
+Vk5TUmVwc1dOU0NvbG9ygAKAERIgwAAAgAOAC1h7MzMsIDMzfdIVChYYWk5TLm9iamVjdHOhF4AEgArS
+FQoaHaIbHIAFgAaACRAA0iAKISJfEBROU1RJRkZSZXByZXNlbnRhdGlvboAHgAhPERQGTU0AKgAAEQwA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAEBAKES8vIDBIRjBJT000UEhGMEkvLyAwEBAKEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAADg4JDlhXPFmtqXOu4dqV4vjxpPr++Kr//vus//74qv/48aT64dqV4qyoc61YVzxZDQ0JDgAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAABdWj1e1tGP1//9rf///q7//vmq//32qf/99qj//fWo//32qP/99qn//vmq///+rv//
+/K3/1tGP11xaPF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAEhIME6KebKT++6z//vus//31qP/99aj//fWo//31qP/99aj//fWo//31qP/9
+9aj//fWo//31qP/99aj//vus///8rP+hnGqiERELEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBAZw76Cxf//r//99qj//fWo//31qP/99aj//faq//73q//+
+96z//ver//73rP/+96v//faq//31qP/99aj//fWo//32qP///6//w72BxBcXDxgAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA0NCA6/un/B//+v//31qP/99aj//fWo//32qv/+
+96v//O+c//njhP/32nT/99dw//fZdP/54oT//O+b//32qv/99qr//fWo//31qP/99aj///+v/765fsAM
+DAgNAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJCMX5L//6///fWo//31qP/9
+9aj//ver//zvnP/31m7/8sVT//LATf/ywEz/8sBM//LATP/ywE3/8sVT//bVbP/875v//ver//31qP/9
+9aj//fWo////r/+Oil6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOzonPPn0pvr+
+96n//fWo//31qP/+96v/+uiN//PHV//ywEz/8sFP//LCT//ywk//8sJP//LCT//ywk//8sJP//LATP/z
+x1X/+uiN//73q//99aj//fWo//73qf/586b6OjkmOwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC
+AgECsat1s//+rv/99aj//fWo//32qv/66pL/8sVS//LBTv/ywk//8sJP//LCT//ywk//8sJP//LCT//y
+wk//8sJP//LCT//ywU7/8sRS//rqkP/+96v//fWo//31qP///q7/sKt0sgICAQIAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAArKxws9u+j+P73qf/99aj//fWp//3yov/zy1v/8sBN//LCT//ywk//8sJP//LCT//y
+wk//8sJP//LCT//ywk//8sJP//LCT//ywk//8sBN//PKW//98qL//fWp//31qP/+96n/9u+j+CsqHCwA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB0cE11//+u//31qP/99aj//ver//jefP/ywEz/8sJP//LCT//y
+wk//8sFO//LATf/ywU7/8sJP//LBTv/ywE3/8sFO//LCT//ywk//8sJP//LATP/43nz//ver//31qP/9
+9aj///+u/3NuS3QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACuqXOw//2t//31qP/99aj//fSn//TNXv/y
+wU7/8sJP//LCT//ywE3/9MhX//fZc//0yVn/8b9M//TIV//32HL/9MpZ//LATf/ywk//8sJP//LBTv/0
+zV7//fSn//31qP/99aj///2t/62oc68AAAAAAAAAAAAAAAAAAAAAAAAAAAYGBAbPyIjR/vus//31qP/9
+9qr/+++a//LFU//ywk//8sJP//LCT//11Gn//PCe//74rP/88J//+N16//zwnv/++Kz//fGh//XUa//y
+wk//8sJP//LCT//yxFL/++6Z//32qv/99aj//vus/87IidAGBgQGAAAAAAAAAAAAAAAAAAAAAA8OChDd
+1ZLf/vmr//31qP/99qr/+uqS//LCT//ywk//8sFO//TIWP/99aj/++2Y//TMXf/544T//faq//rliP/0
+zF3/++uT//73q//0y1z/8sFO//LCT//ywU//+umR//32qv/99aj//vmr/93Vkt8PDwoPAAAAAAAAAAAA
+AAAAAAAAABAQChHf2JPh/vmq//31qP/+96v/+umR//LBTv/ywk//8sJP//LBT//5337//fSl//TOYP/y
+wEz/88pb//LATf/0y1z//fOj//nig//ywlD/8sJP//LCT//ywU7/+umP//73q//99aj//vmq/97Xk+AQ
+EAoRAAAAAAAAAAAAAAAAAAAAAAkJBgrUzozW/vqr//31qP/99qr/++2X//LDUf/ywk//8sJP//LCT//y
+wlD/+uiO//3xof/0yVj/8b9M//PHVf/775z/++uT//LEUv/ywk//8sJP//LCT//yw1D/++2W//32qv/9
+9aj//vqr/9TNjNYJCQUJAAAAAAAAAAAAAAAAAAAAAAAAAAC7tHu9//yt//31qP/99an//fOj//PJWf/y
+wU7/8sJP//LCT//ywU7/88dV//vvm//66I3/8sFO//rkh//98aD/9MlY//LBTv/ywk//8sJP//LBTv/z
+yVn//fOj//31qf/99aj///yt/7qze7wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACGglmI//+v//31qP/9
+9aj//ver//fYcv/ywEz/8sJP//LCT//ywk//8b9M//fadf/88J7/8sRS//vvmf/43nz/8b9M//LCT//y
+wk//8sJP//LATP/32HH//ver//31qP/99aj///+v/4WCWIcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA
+PipB/fep/v32qP/99aj//faq//zvm//yxVP/8sFO//LCT//ywk//8sBM//fadP/8753/8sRS//vumP/4
+3Xv/8sBN//LCT//ywk//8sFO//LFU//87pr//faq//31qP/99qj//fep/j89KUAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAICAUIzcaHz//8rP/99aj//fWo//73q//54YL/8sFO//LCT//ywk//8sBM//fadP/8
+753/8sRS//vumP/43Xv/8sBN//LCT//ywk//8sFO//nggP/+96v//fWo//31qP///Kz/zMWHzgcHBQgA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXVo9Xv/8rf/99aj//fWo//31qP/99qr/+N58//LCT//y
+wk//8sBM//fadP/8753/8sRS//vumP/43Xv/8sBN//LCT//ywU7/99t3//32qv/99aj//fWo//31qP//
+/K3/XFg8XQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQUDBbizebr//q7//fWo//31qP/9
+9aj//ver//jdef/ywU7/8sBM//fadP/8753/8sRS//vumP/43Xv/8sBN//LBTv/32nX//ver//31qf/9
+9aj//fWo////rv+3sXm5BQUDBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQjFyXj
+3Jjk/vus//31qP/99aj//fWp//30pv/2zFr/9cFJ//nccf/98pv/9sVP//zwlv/633f/9cFJ//bKV//9
+86T//fap//31qP/99aj//vus/+LbluMiIhcjAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAA+PCk/6+Wd7P/8rP/99aj//fWo//74qv/k0In/zrN6/9PGmv/X0rT/0bqA/9jSsf/W
+yp//0LV7/+XQh//+96n//fWo//31qP///K3/6uSc6z07KD4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOTclOtjSj9n//6///fap//74pv/Ky8H/mqXg/5qj2f+V
+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
+cKMnKSpaTlNJbWFnZVJlcFhOU09iamVjdNIlJiwtV05TQXJyYXmiLCrSJSYvMF5OU011dGFibGVBcnJh
+eaMvLCrVMjM0NQo2Nzg5OldOU1doaXRlXE5TQ29tcG9uZW50c1xOU0NvbG9yU3BhY2VfEBJOU0N1c3Rv
+bUNvbG9yU3BhY2VEMCAwAEMwIDAQA4AMgBDUPD0+Cj9AQUJUTlNJRFVOU0lDQ1dOU01vZGVsEAmADRAA
+gA/SRApFRldOUy5kYXRhTxERaAAAEWhhcHBsAgAAAG1udHJHUkFZWFlaIAfcAAgAFwAPAC4AD2Fjc3BB
+UFBMAAAAAG5vbmUAAAAAAAAAAAAAAAAAAAAAAAD21gABAAAAANMtYXBwbAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABWRlc2MAAADAAAAAeWRzY20AAAE8AAAH6GNwcnQA
+AAkkAAAAI3d0cHQAAAlIAAAAFGtUUkMAAAlcAAAIDGRlc2MAAAAAAAAAH0dlbmVyaWMgR3JheSBHYW1t
+YSAyLjIgUHJvZmlsZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABtbHVjAAAAAAAAAB8AAAAMc2tTSwAAAC4A
+AAGEZGFESwAAADgAAAGyY2FFUwAAADgAAAHqdmlWTgAAAEAAAAIicHRCUgAAAEoAAAJidWtVQQAAACwA
+AAKsZnJGVQAAAD4AAALYaHVIVQAAADQAAAMWemhUVwAAAB4AAANKbmJOTwAAADoAAANoY3NDWgAAACgA
+AAOiaGVJTAAAACQAAAPKaXRJVAAAAE4AAAPucm9STwAAACoAAAQ8ZGVERQAAAE4AAARma29LUgAAACIA
+AAS0c3ZTRQAAADgAAAGyemhDTgAAAB4AAATWamFKUAAAACYAAAT0ZWxHUgAAACoAAAUacHRQTwAAAFIA
+AAVEbmxOTAAAAEAAAAWWZXNFUwAAAEwAAAXWdGhUSAAAADIAAAYidHJUUgAAACQAAAZUZmlGSQAAAEYA
+AAZ4aHJIUgAAAD4AAAa+cGxQTAAAAEoAAAb8cnVSVQAAADoAAAdGZW5VUwAAADwAAAeAYXJFRwAAACwA
+AAe8AFYBYQBlAG8AYgBlAGMAbgDhACAAcwBpAHYA4QAgAGcAYQBtAGEAIAAyACwAMgBHAGUAbgBlAHIA
+aQBzAGsAIABnAHIA5QAgADIALAAyACAAZwBhAG0AbQBhAHAAcgBvAGYAaQBsAEcAYQBtAG0AYQAgAGQA
+ZQAgAGcAcgBpAHMAbwBzACAAZwBlAG4A6AByAGkAYwBhACAAMgAuADIAQx6lAHUAIABoAOwAbgBoACAA
+TQDgAHUAIAB4AOEAbQAgAEMAaAB1AG4AZwAgAEcAYQBtAG0AYQAgADIALgAyAFAAZQByAGYAaQBsACAA
+RwBlAG4A6QByAGkAYwBvACAAZABhACAARwBhAG0AYQAgAGQAZQAgAEMAaQBuAHoAYQBzACAAMgAsADIE
+FwQwBDMEMAQ7BEwEPQQwACAARwByAGEAeQAtBDMEMAQ8BDAAIAAyAC4AMgBQAHIAbwBmAGkAbAAgAGcA
+6QBuAOkAcgBpAHEAdQBlACAAZwByAGkAcwAgAGcAYQBtAG0AYQAgADIALAAyAMEAbAB0AGEAbADhAG4A
+bwBzACAAcwB6APwAcgBrAGUAIABnAGEAbQBtAGEAIAAyAC4AMpAadShwcJaOUUlepgAgADIALgAyACCC
+cl9pY8+P8ABHAGUAbgBlAHIAaQBzAGsAIABnAHIA5QAgAGcAYQBtAG0AYQAgADIALAAyAC0AcAByAG8A
+ZgBpAGwATwBiAGUAYwBuAOEAIAFhAGUAZADhACAAZwBhAG0AYQAgADIALgAyBdIF0AXeBdQAIAXQBeQF
+1QXoACAF2wXcBdwF2QAgADIALgAyAFAAcgBvAGYAaQBsAG8AIABnAHIAaQBnAGkAbwAgAGcAZQBuAGUA
+cgBpAGMAbwAgAGQAZQBsAGwAYQAgAGcAYQBtAG0AYQAgADIALAAyAEcAYQBtAGEAIABnAHIAaQAgAGcA
+ZQBuAGUAcgBpAGMBAwAgADIALAAyAEEAbABsAGcAZQBtAGUAaQBuAGUAcwAgAEcAcgBhAHUAcwB0AHUA
+ZgBlAG4ALQBQAHIAbwBmAGkAbAAgAEcAYQBtAG0AYQAgADIALAAyx3y8GAAg1ozAyQAgrBC5yAAgADIA
+LgAyACDVBLhc0wzHfGZukBpwcF6mfPtlcAAgADIALgAyACBjz4/wZYdO9k4AgiwwsDDsMKQwrDDzMN4A
+IAAyAC4AMgAgMNcw7TDVMKEwpDDrA5MDtQO9A7kDugPMACADkwO6A8EDuQAgA5MDrAO8A7wDsQAgADIA
+LgAyAFAAZQByAGYAaQBsACAAZwBlAG4A6QByAGkAYwBvACAAZABlACAAYwBpAG4AegBlAG4AdABvAHMA
+IABkAGEAIABHAGEAbQBtAGEAIAAyACwAMgBBAGwAZwBlAG0AZQBlAG4AIABnAHIAaQBqAHMAIABnAGEA
+bQBtAGEAIAAyACwAMgAtAHAAcgBvAGYAaQBlAGwAUABlAHIAZgBpAGwAIABnAGUAbgDpAHIAaQBjAG8A
+IABkAGUAIABnAGEAbQBtAGEAIABkAGUAIABnAHIAaQBzAGUAcwAgADIALAAyDiMOMQ4HDioONQ5BDgEO
+IQ4hDjIOQA4BDiMOIg5MDhcOMQ5IDicORA4bACAAMgAuADIARwBlAG4AZQBsACAARwByAGkAIABHAGEA
+bQBhACAAMgAsADIAWQBsAGUAaQBuAGUAbgAgAGgAYQByAG0AYQBhAG4AIABnAGEAbQBtAGEAIAAyACwA
+MgAgAC0AcAByAG8AZgBpAGkAbABpAEcAZQBuAGUAcgBpAQ0AawBpACAARwByAGEAeQAgAEcAYQBtAG0A
+YQAgADIALgAyACAAcAByAG8AZgBpAGwAVQBuAGkAdwBlAHIAcwBhAGwAbgB5ACAAcAByAG8AZgBpAGwA
+IABzAHoAYQByAG8BWwBjAGkAIABnAGEAbQBtAGEAIAAyACwAMgQeBDEESQQwBE8AIARBBDUEQAQwBE8A
+IAQzBDAEPAQ8BDAAIAAyACwAMgAtBD8EQAQ+BEQEOAQ7BEwARwBlAG4AZQByAGkAYwAgAEcAcgBhAHkA
+IABHAGEAbQBtAGEAIAAyAC4AMgAgAFAAcgBvAGYAaQBsAGUGOgYnBkUGJwAgADIALgAyACAGRAZIBkYA
+IAYxBkUGJwYvBkoAIAY5BicGRXRleHQAAAAAQ29weXJpZ2h0IEFwcGxlIEluYy4sIDIwMTIAAFhZWiAA
+AAAAAADzUQABAAAAARbMY3VydgAAAAAAAAQAAAAABQAKAA8AFAAZAB4AIwAoAC0AMgA3ADsAQABFAEoA
+TwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCfAKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA
+5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgBPgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEB
+qQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIUAh0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwC
+tgLBAssC1QLgAusC9QMAAwsDFgMhAy0DOANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYE
+EwQgBC0EOwRIBFUEYwRxBH4EjASaBKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUF
+xQXVBeUF9gYGBhYGJwY3BkgGWQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H
+0gflB/gICwgfCDIIRghaCG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicK
+PQpUCmoKgQqYCq4KxQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMN
+DQ0mDUANWg10DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQ
+QxBhEH4QmxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT
+5RQGFCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX
+9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwqHFIc
+exyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg8CEcIUgh
+dSGhIc4h+yInIlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3JicmVyaHJrcm
+6CcYJ0kneierJ9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2krnSvRLAUsOSxuLKIs
+1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGCMbox8jIqMmMymzLUMw0z
+RjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4FDhQOIw4yDkFOUI5fzm8Ofk6
+Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7gPyE/YT+iP+JAI0BkQKZA50EpQWpB
+rEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJGZ0arRvBHNUd7R8BIBUhLSJFI10kdSWNJ
+qUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4lTm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZS
+MVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxWqVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVb
+RVuVW+VcNVyGXNZdJ114XcleGl5sXr1fD19hX7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk
+6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg/aJZo7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRv
+Hm94b9FwK3CGcOBxOnGVcfByS3KmcwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl5
+53pGeqV7BHtje8J8IXyBfOF9QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOF
+R4Wrhg6GcobXhzuHn4gEiGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaR
+P5GokhGSepLjk02TtpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd
+0p5Anq6fHZ+Ln/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+r
+Aqt1q+msXKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm4
+0blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPH
+Qce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHW
+VdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTm
+DeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72
+bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t//+ADtIlJkhJXU5TTXV0YWJsZURhdGGjSEoq
+Vk5TRGF0YdIlJkxNXE5TQ29sb3JTcGFjZaJOKlxOU0NvbG9yU3BhY2XSJSZQUVdOU0NvbG9yolAq0iUm
+U1RXTlNJbWFnZaJTKl8QD05TS2V5ZWRBcmNoaXZlctFXWFRyb290gAEACAARABoAIwAtADIANwBMAFIA
+XQBkAGsAeAB/AIcAiQCLAJAAkgCUAJ0AogCtAK8AsQCzALgAuwC9AL8AwQDDAMgA3wDhAOMU7RTyFP0V
+BhUZFR0VKBUxFTYVPhVBFUYVVRVZFWQVbBV5FYYVmxWgFaQVphWoFaoVsxW4Fb4VxhXIFcoVzBXOFdMV
+2ydHJ0knTidcJ2AnZydsJ3knfCeJJ44nlieZJ54npiepJ7snvifDAAAAAAAAAgEAAAAAAAAAWQAAAAAA
+AAAAAAAAAAAAJ8U
+</mutableData>
+        </image>
         <image name="person" width="21" height="21"/>
         <image name="roommates" width="33" height="33"/>
         <image name="roommates-fill" width="33" height="33"/>

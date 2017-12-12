@@ -3,29 +3,28 @@
 import UIKit
 
 class ChoreViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     var tasks = [Task]()
     
     var finished:Bool = false
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.tableView.reloadData()
-        super.viewWillAppear(animated)
-        self.fetchData(isFinished: finished)
-        
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+        super.viewWillAppear(animated)
+        self.fetchData(isFinished: finished)
+    }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -42,11 +41,9 @@ class ChoreViewController: UIViewController {
         if (sender.selectedSegmentIndex == 0){
             finished = false
             self.fetchData(isFinished: finished)
-            self.tableView.reloadData()
         }else{
             finished = true
             self.fetchData(isFinished: finished)
-            self.tableView.reloadData()
         }
     }
     
@@ -98,7 +95,7 @@ extension ChoreViewController : UITableViewDelegate,UITableViewDataSource {
                 self?.tableView.reloadData()
                 
             }
-
+            
         }
         return [deleteAction, finishAction]
     }
@@ -110,3 +107,4 @@ extension ChoreViewController : UITableViewDelegate,UITableViewDataSource {
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 }
+
